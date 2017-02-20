@@ -1,0 +1,38 @@
+header
+  // border-bottom-left-radius: 80% 15%
+  // border-bottom-right-radius: 80% 15%
+  position: relative
+  height: 600px
+
+  .header-bg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-image: url("../assets/img/header.jpg")
+    background-size: cover
+    background-position: center
+    //background-attachment: fixed
+    transform: skewY(-3deg)
+    transform-origin: top left
+
+  .header-content
+    position: absolute
+    bottom: 200px
+    h1
+      color: white
+    p
+      color: rgba(255,255,255,.9)
+      margin-bottom: 30px
+
+    .dl-cv
+      color: white
+      text-decoration: none
+      background: linear-gradient(to right, #c0392b, #e74c3c)
+      padding: 10px 15px
+      border-radius: 3px
+      transition: box-shadow 0.2s ease-in-out
+
+      &:hover
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
